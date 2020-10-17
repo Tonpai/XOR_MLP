@@ -52,5 +52,5 @@ for k = 1:1000
     drawnow;
 end
 
-y_hidden = logsig(x * w_hidden + w_hidden_bias);
+y_hidden = tanh(x * w_hidden + w_hidden_bias);
 y_output = logsig(y_hidden * w_output + w_output_bias);
